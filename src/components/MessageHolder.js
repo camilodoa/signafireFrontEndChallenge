@@ -8,8 +8,13 @@ import Highlighter from "react-highlight-words";
 // https://github.com/bvaughn/react-highlight-words
 // Many thanks to @bvaughn!
 
+/*
+  MessageHolder is called in Messages.js as
+  the format for each message rendering
 
-// Render message
+  Calls StarredButton.js and TrashedButton.js for button implementation
+*/
+
 const MessageHolder = ({id, handle, avatar, timestamp,
                         source, content, score, meta, starred,
                         star, unStar, trash, unTrash, search, searching}) =>{

@@ -1,5 +1,9 @@
 # signafireFrontEndChallenge
 
+![Demo signafireFrontEndChallenge](https://gfycat.com/RichHiddenHomalocephale)
+
+
+
 A UI made in React for Signafire's Front-End Challenge
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

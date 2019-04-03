@@ -6,6 +6,12 @@ import FormControl from 'react-bootstrap/FormControl';
 import Form from 'react-bootstrap/Form';
 import 'bootstrap/dist/css/bootstrap.css';
 
+/*
+   Messages loops through all the messages in messages.json
+   and calls either RenderMessages or RenderTrashed to
+   render each one
+*/
+
 // sub-components ==============================================================
 const RenderMessages = ({starred, star, unStar, messages, trash,
                           unTrash, searching, search}) => {

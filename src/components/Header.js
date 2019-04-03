@@ -2,8 +2,11 @@ import React from 'react';
 import './css/header.css';
 import logo from './img/assets_logo-sf-small.png';
 
+/*
+   Renders the page's header
+   Called from App.js
+*/
 
-//App Header
 const Header = ({}) =>{
   return(
     <div className = "Header-wrapper">

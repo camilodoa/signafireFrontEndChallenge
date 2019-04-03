@@ -3,6 +3,10 @@ import Button from 'react-bootstrap/Button';
 import './css/starredButton.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
+/*
+   Renders the starred button
+   Called from MessageHolder.js
+*/
 
 const StarredButton  = ({meta, star, unStar, starred, id}) => {
   return(

@@ -3,6 +3,12 @@ import Header from './components/Header.js';
 import Messages from './components/Messages.js';
 import {data} from './components/data/MessageData.js';
 
+/*
+   App.js calls on Header.js to render the header and on
+   Messages.js to render all of the messages
+  It's here where all the state variables/methods are declared and called
+*/
+
 //to find initial # of starred:
 var starred = 0;
 data.messages.map((message)=>{
