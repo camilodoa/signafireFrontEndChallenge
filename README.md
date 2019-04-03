@@ -11,7 +11,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   * *Make sure you have node version 4 or newer*
      `node -v`
 * Install react
-   `npm i react`
+   `npm install react`
 * Install bootstrap
    `npm install bootstrap`
 * Install and save Highlighter Component
@@ -19,7 +19,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 
-## To Run:
+## To Run
 
 * `npm install`
 
