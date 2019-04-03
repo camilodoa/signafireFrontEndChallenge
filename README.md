@@ -1,8 +1,7 @@
 # signafireFrontEndChallenge
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-
-Application for Hackkings 5.0 made in React-Native
+A UI made in React for Signafire's Front-End Challenge
 
 ## Installation
 
