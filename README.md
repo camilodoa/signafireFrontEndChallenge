@@ -1,6 +1,6 @@
 # signafireFrontEndChallenge
 
-<img src="https://thumbs.gfycat.com/RichHiddenHomalocephale-small.gif" frameborder='0' scrolling='no' allowfullscreen width='640' height='393'/>
+<img src="https://thumbs.gfycat.com/RichHiddenHomalocephale-size_restricted.gif" frameborder='0' scrolling='no' allowfullscreen width='640' height='393'/>
 
 
 
