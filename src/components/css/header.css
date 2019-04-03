@@ -1,0 +1,29 @@
+.Header-wrapper{
+  height:40px;
+  justify-content: space-between;
+  display: flex;
+  border-bottom: 2px solid 	#E0E0E0;
+  background-color: #F0F0F0;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+}
+
+.Header-title{
+  align-items: right;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  color: #808080;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: condensed;
+}
+
+.Signafire-Logo{
+  align-items: left;
+  text-align: center;
+  padding: 5px;
+}
