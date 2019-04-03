@@ -35,7 +35,6 @@ const MessageHolder = ({id, handle, avatar, timestamp,
   var longTime = formatDate(time);
 
   return(
-
   <div className = "Message-wrapper">
 
     {meta.isTrashed ? (
@@ -148,9 +147,7 @@ const MessageHolder = ({id, handle, avatar, timestamp,
       </div>
     )}
   </div>
-
   )
 }
-
 
 export default MessageHolder;

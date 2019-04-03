@@ -4,8 +4,6 @@ import './css/starredButton.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
 
-
-
 const TrashedButton  = ({meta, id, trash, unTrash}) => {
   return(
       <div key={id}>
