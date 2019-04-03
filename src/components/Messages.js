@@ -7,10 +7,11 @@ import Form from 'react-bootstrap/Form';
 import 'bootstrap/dist/css/bootstrap.css';
 
 // sub-components ==============================================================
-const RenderMessages = ({starred, star, unStar, messages, trash, unTrash}) => {
+const RenderMessages = ({starred, star, unStar, messages, trash,
+                          unTrash, searching, search}) => {
   return messages.map((message)=>{
     return (
-      <div>
+      <div key = {message.id}>
       {message.meta.isTrashed ? (
         <div>
         </div>
@@ -29,6 +30,8 @@ const RenderMessages = ({starred, star, unStar, messages, trash, unTrash}) => {
         unStar = {unStar}
         trash = {trash}
         unTrash = {unTrash}
+        searching = {searching}
+        search = {search}
         />
       )}
       </div>
@@ -36,7 +39,8 @@ const RenderMessages = ({starred, star, unStar, messages, trash, unTrash}) => {
   })
 }
 
-const RenderTrashed = ({starred, star, unStar, messages, trash, unTrash}) => {
+const RenderTrashed = ({starred, star, unStar, messages, trash, unTrash,
+                        search, searching}) => {
   return messages.map((message)=>{
     return (
       <div>
@@ -55,6 +59,8 @@ const RenderTrashed = ({starred, star, unStar, messages, trash, unTrash}) => {
         unStar = {unStar}
         trash = {trash}
         unTrash = {unTrash}
+        search = {search}
+        searching = {searching}
         />
       ) : (
         <div>
@@ -68,7 +74,8 @@ const RenderTrashed = ({starred, star, unStar, messages, trash, unTrash}) => {
 
 // Message component ===========================================================
 const Messages = ({starred, star, unStar, messages,
-                    trash, unTrash, trashView, changeView}) =>{
+                    trash, unTrash, trashView, changeView, search, handleUpdate,
+                  searching, changeSearch}) =>{
   return(
     <div>
       <header className = "Messages-title">
@@ -97,7 +104,9 @@ const Messages = ({starred, star, unStar, messages,
               unStar = {unStar}
               messages = {messages}
               trash = {trash}
-              unTrash = {unTrash}/>
+              unTrash = {unTrash}
+              search = {search}
+              searching = {searching}/>
             </div>
           </div>
         </div>
@@ -116,11 +125,20 @@ const Messages = ({starred, star, unStar, messages,
             </header>
 
             <header className = "Search-header">
-              <Form inline>
-                 <FormControl type="text" placeholder="Search"
-                  size = "sm" className="mr-sm-2" />
+              <Form
+              inline
+              controlId = "formGroupEmail"
 
-                 <Button variant="outline-primary" size = "sm">
+              >
+                 <FormControl type="text" placeholder="Search"
+                  size = "sm" className="mr-sm-2" default = ""
+                  onChange = {(e) => handleUpdate(e)}
+                   />
+                 <Button variant="outline-primary"
+                 size = "sm"
+                 type = "submit"
+                 onClick = {(e)=>changeSearch(e)}
+                 >
                  Search
                  </Button>
               </Form>
@@ -136,7 +154,9 @@ const Messages = ({starred, star, unStar, messages,
               unStar = {unStar}
               messages = {messages}
               trash = {trash}
-              unTrash = {unTrash}/>
+              unTrash = {unTrash}
+              search = {search}
+              searching = {searching}/>
             </div>
           </div>
         </div>

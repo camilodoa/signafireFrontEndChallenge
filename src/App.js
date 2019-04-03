@@ -18,13 +18,17 @@ class App extends React.Component {
     this.state = {
       starred: starred,
       messages: data.messages,
-      trashView: false
+      trashView: false,
+      search: '',
+      searching: false
     }
     this.star = this.star.bind(this);
     this.unStar = this.unStar.bind(this);
     this.trash = this.trash.bind(this);
     this.unTrash = this.unTrash.bind(this);
     this.changeView = this.changeView.bind(this);
+    this.handleUpdate = this.handleUpdate.bind(this);
+    this.changeSearch = this.changeSearch.bind(this);
   }
 
   // state variable methods ====================================================
@@ -71,11 +75,27 @@ class App extends React.Component {
   changeView(){
     this.setState({trashView: !this.state.trashView});
   }
+
+  handleUpdate(e){
+    e.preventDefault();
+
+    if(e.target.value == ""){
+      this.setState({searching: false});
+    }else{
+      this.setState({search: e.target.value});
+    }
+    return false;
+  }
+
+  changeSearch(e){
+    e.preventDefault();
+    this.setState({searching: true});
+  }
+
 // end of state variable methods ===============================================
 
   render() {
     return (
-      <body>
         <div>
           <Header/>
           <Messages
@@ -87,9 +107,12 @@ class App extends React.Component {
             unTrash = {this.unTrash}
             trashView = {this.state.trashView}
             changeView = {this.changeView}
+            search = {this.state.search}
+            handleUpdate = {this.handleUpdate}
+            searching = {this.state.searching}
+            changeSearch = {this.changeSearch}
           />
         </div>
-      </body>
     );
   }
 }

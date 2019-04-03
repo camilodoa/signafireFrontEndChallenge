@@ -4,13 +4,17 @@ import StarredButton from './StarredButton.js';
 import TrashedButton from './TrashedButton.js';
 import Highlighter from "react-highlight-words";
 
+// Highlighter Component from
+// https://github.com/bvaughn/react-highlight-words
+// Many thanks to @bvaughn!
 
 
 // Render message
 const MessageHolder = ({id, handle, avatar, timestamp,
                         source, content, score, meta, starred,
-                        star, unStar, trash, unTrash}) =>{
+                        star, unStar, trash, unTrash, search, searching}) =>{
 
+  const searchWords = search.split(/\s/).filter(word => word);
 
   var time  = new Date(timestamp);
 
@@ -104,14 +108,22 @@ const MessageHolder = ({id, handle, avatar, timestamp,
         <br/>
 
         <div className = "Message">
-          <span>
-            <Highlighter
-              highlightClassName="YourHighlightClass"
-              searchWords={["and", "or", "the"]}
-              autoEscape={true}
-              textToHighlight={content}
-            />
-          </span>
+          {searching ? (
+            <span>
+              <Highlighter
+                caseSensitive={false}
+                highlightClassName={"Message"}
+                highlightStyle={{ fontWeight: 'normal' }}
+
+                searchWords={searchWords}
+                textToHighlight={content}
+              />
+            </span>
+          ):(
+            <span>
+              {content}
+            </span>
+          )}
         </div>
       </div>
 
