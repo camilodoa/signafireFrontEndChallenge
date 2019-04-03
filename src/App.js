@@ -9,6 +9,7 @@ data.messages.map((message)=>{
   if(message.meta.isStarred === true){
     starred += 1;
   }
+  return true;
 })
 
 class App extends React.Component {
@@ -79,7 +80,7 @@ class App extends React.Component {
   handleUpdate(e){
     e.preventDefault();
 
-    if(e.target.value == ""){
+    if(e.target.value === ""){
       this.setState({searching: false});
     }else{
       this.setState({search: e.target.value});

@@ -126,10 +126,7 @@ const Messages = ({starred, star, unStar, messages,
 
             <header className = "Search-header">
               <Form
-              inline
-              controlId = "formGroupEmail"
-
-              >
+              inline>
                  <FormControl type="text" placeholder="Search"
                   size = "sm" className="mr-sm-2" default = ""
                   onChange = {(e) => handleUpdate(e)}
