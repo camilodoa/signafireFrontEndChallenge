@@ -7,15 +7,15 @@ Application for Hackkings 5.0 made in React-Native
 ## Installation
 
 * Install dependencies
-  *  `brew install node`
-  * *Make sure you have node version 4 or newer*
-    * `node -v`
+  `brew install node`
+  *Make sure you have node version 4 or newer*
+     `node -v`
 * Install react
-  * `npm i react`
+  `npm i react`
 * Download bootstrap
-  * `npm install bootstrap`
+   `npm install bootstrap`
 * Download and save Highlighter Component
-  * `npm i --save react-highlight-words`
+   `npm i --save react-highlight-words`
 
 
 
