@@ -15,7 +15,6 @@ const TrashedButton  = ({meta, id, trash, unTrash}) => {
 
           <Button
           variant="outline-danger"
-          size = "sm"
           onClick={()=>unTrash(id)}>
           Recover
           </Button>

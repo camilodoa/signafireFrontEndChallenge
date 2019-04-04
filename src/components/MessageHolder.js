@@ -71,14 +71,6 @@ const MessageHolder = ({id, handle, avatar, timestamp,
       </div>
 
       <div className = "Buttons">
-        <div className = "Trashed">
-          <TrashedButton
-            meta = {meta}
-            id = {id}
-            trash = {trash}
-            unTrash = {unTrash}/>
-        </div>
-
         <div className = "Starred">
           <StarredButton
             meta = {meta}
@@ -86,6 +78,13 @@ const MessageHolder = ({id, handle, avatar, timestamp,
             star = {star}
             unStar = {unStar}
             id = {id}/>
+        </div>
+        <div className = "Trashed">
+          <TrashedButton
+            meta = {meta}
+            id = {id}
+            trash = {trash}
+            unTrash = {unTrash}/>
         </div>
       </div>
       </div>
@@ -132,14 +131,6 @@ const MessageHolder = ({id, handle, avatar, timestamp,
       </div>
 
       <div className = "Buttons">
-        <div className = "Trashed">
-          <TrashedButton
-            meta = {meta}
-            id = {id}
-            trash = {trash}
-            unTrash = {unTrash}/>
-        </div>
-
         <div className = "Starred">
           <StarredButton
             meta = {meta}
@@ -147,6 +138,14 @@ const MessageHolder = ({id, handle, avatar, timestamp,
             star = {star}
             unStar = {unStar}
             id = {id}/>
+        </div>
+
+        <div className = "Trashed">
+          <TrashedButton
+            meta = {meta}
+            id = {id}
+            trash = {trash}
+            unTrash = {unTrash}/>
         </div>
       </div>
       </div>

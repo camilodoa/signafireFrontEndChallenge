@@ -51,7 +51,7 @@
   padding-top: 5px;
   text-align: left;
   font-size: 13px;
-  width: auto;
+  width: 58em;
 }
 
 .Starred{
@@ -62,7 +62,7 @@
   display: inline-block;
   text-align:center;
   justify-content: flex-start;
-  float: right;
+
 }
 
 .Trashed{
@@ -73,11 +73,12 @@
   display: inline-block;
   text-align:center;
   justify-content: flex-start;
+  float: right;
 }
 
 .Buttons{
   padding-top: 11px;
-  padding-right: 5px;
+  padding-right: 10px;
   float: right;
   justify-content: flex-start;
   display: inline-block;
