@@ -19,7 +19,7 @@
     "lodash": "^4.17.19",
     "lodash.template": "^4.5.0",
     "memoize-one": "^5.0.2",
-    "minimist": "^0.2.1",
+    "minimist": "^1.2.3",
     "node-forge": "^0.10.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
