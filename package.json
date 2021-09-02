@@ -12,7 +12,7 @@
     "handlebars": "^4.5.3",
     "highlight-words-core": "^1.2.2",
     "http-proxy": "^1.18.1",
-    "immer": "~8.0.1",
+    "immer": "~9.0.6",
     "ini": "~2.0.0",
     "jQuery": "^1.7.4",
     "jquery": "~3.0.0",
