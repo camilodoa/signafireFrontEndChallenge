@@ -35,7 +35,7 @@
     "react-sticky": "^6.0.3",
     "react-sticky-header": "^0.2.0",
     "serialize-javascript": "^3.1.0",
-    "set-value": "~3.0.2",
+    "set-value": "~4.0.1",
     "websocket-extensions": "^0.1.4",
     "yargs-parser": "~20.2.4"
   },
